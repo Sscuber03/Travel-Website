@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+.container1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     height: 100vh;
     min-height: 500px;
     width: 100%;
@@ -15,59 +16,71 @@
     box-sizing: border-box;
     position: relative;
 }
-.navbar{
+
+.navbar {
     height: auto;
     width: 100%;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
-.logo{
-    height: 4.5em;
-    width: 4.5em;
+
+.logo {
+    height: 2.5em;
+    width: 2.5em;
     padding-left: 25px;
 }
-.heading{
+
+.heading {
     margin: auto;
+    font-size: 12px;
+    opacity: 0.9;
 }
-.contactbtn a{
-    padding: 10px 25px;
+
+.contactbtn a {
+    padding: 5px 15px;
     background: rgba(144, 223, 255, 0.479);
     border: 3px #579da0 solid;
     border-radius: 25px;
 }
-.contactbtn a:hover{
+
+.contactbtn a:hover {
     background: rgba(144, 224, 255, 0.774);
 }
-.cnttxt{
+
+.cnttxt {
     text-decoration: none;
-    font-size: larger;
+    font-size: medium;
     color: black;
 }
-.introtext{
+
+.introtext {
     max-height: 1700px;
 }
-.introtext h1{
+
+.introtext h1 {
     margin: auto;
     width: 75%;
     padding: 150px 0px;
     text-align: center;
     padding: auto;
-    font-weight: 600;
-    font-size: 80px;
+    font-weight: 450;
+    font-size: 60px;
 }
-.introtext p{
+
+.introtext p {
     margin: auto;
     width: 75%;
-    padding: 150px 0px;
+    padding: 40px 0px;
     text-align: center;
     padding: auto;
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 350;
+    font-size: 35px;
     color: white;
-} 
-.container2{
+}
+
+.container2 {
     width: 100%;
     background-image: url(assets/pexels-s-migaj-747964.jpg);
     background-attachment: fixed;
@@ -77,23 +90,100 @@
     box-sizing: border-box;
     position: relative;
 }
-.places{
-    background-color: rgba(255, 255, 255, .75);
+
+.places {
+    background-color: rgba(255, 255, 255, 0.75);
 }
-.places h1{
+
+.places h1 {
     margin: auto;
     width: 75%;
     text-align: center;
     padding: 50px 0px;
 }
-.places img{
+
+.card img {
     object-fit: cover;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     border: 5px rgb(0, 130, 216) solid;
     border-radius: 25px;
 }
-ul{
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* gap: 20px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.loc-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.loc-name h4 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.image-loc{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    object-fit: cover;
+    /* display: grid; */
+    width: 200px;
+    height: 300px;
+    /* border: 5px rgb(0, 130, 216) solid; */
+    border-radius: 25px;
+}
+
+.image-loc .overlay {
+    position: absolute;
+    bottom: 0;
+    /* left: 0;
+    right: 0; */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    height: 0;
+    transition: 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.image-loc:hover .overlay {
+    height: 60%;
+}
+
+.overlay .text{
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+ul {
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
@@ -101,17 +191,20 @@ ul{
     margin: 0;
     padding: 20px;
 }
-li{
+
+li {
     display: block;
     align-items: center;
 }
-li a{
+
+li a {
     text-decoration: none;
     font-size: x-large;
     font-weight: 600;
     color: black;
 }
-.footer{
+
+.footer {
     padding-top: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     height: 6em;
@@ -119,20 +212,24 @@ li a{
     display: flex;
     width: 100%;
 }
-.copyright{
+
+.copyright {
     text-align: left;
     padding: 30px 10px;
     width: 25%;
     font-size: small;
 }
-.about{
+
+.about {
     width: 50%;
     padding-top: 10px;
 }
-.about li a{
+
+.about li a {
     padding: 0px 25px;
 }
-.contact{
+
+.contact {
     margin: auto;
     width: 25%;
     padding-left: 60px;
