@@ -1,8 +1,4 @@
-# Webify-2022
-My submission for Webify 2022 WebDev Competition
 
+Me trying out What i can do with basic html css!
 
-https://heroic-beijinho-7b1ddb.netlify.app
-
-
-Or you could also check the github deployment!
+You could also check the github deployment!
